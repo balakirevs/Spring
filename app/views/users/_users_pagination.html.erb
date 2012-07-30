@@ -1,0 +1,11 @@
+ <% if params[:search] %>
+    <ul class="users">  
+      <%= render @users %>  
+    </ul>
+  <% else %>  
+    <%= will_paginate @users, previous_label: "<<", next_label: ">>" %>
+    <ul class="users">  
+      <%= render @users %>  
+    </ul>       
+    <%= will_paginate @users, previous_label: "<<", next_label: ">>" %> 
+ <% end %>   

@@ -1,0 +1,11 @@
+<% provide(:title, 'Зарегистрироваться') %>
+<h1>Регистрация</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user, :html => {:multipart => true }) do |f| %>
+      <%= render 'fields', f: f %>
+      <%= f.submit "Зарегистрироваться", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

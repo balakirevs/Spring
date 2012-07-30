@@ -1,0 +1,16 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  activerecord:
+    attributes:
+      user:
+        password_digest: "Пароль"
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+        phone: "Мобильный телефон"
+        city: "Город"
+        date_of_birth: "Дата рождения"
+        name: "Имя"
+        surname: "Фамилия"
+        middle_name: "Отчество"
