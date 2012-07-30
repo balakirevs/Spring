@@ -19,15 +19,15 @@ Myspring::Application.configure do
   #Change mail delivery to either :smtp, :sendmail, :file, :test
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
-  port: 587,
-  domain: "vesna.com",
-  authentication: "plain",
-  enable_starttls_auto: true,
-  user_name: "gmailusername",
-  password: "gmailpassword"
-}
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "vesna.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: "gmailusername",
+    password: "gmailpassword"
+  }
 
 
   #specify what domain to use for mailer URLs
